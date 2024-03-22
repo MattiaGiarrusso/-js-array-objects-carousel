@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+.container-carosel {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.row-carosel {
+    width: 1000px;
+    height: 500px;
+    display: flex;
+}
+
+.col-70 {
+    background-color: orange;
+    width: 70%;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    display: none;
+}
+
+.image.active {
+    display: block;
+}
+
+.col-70 img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.col-30 {
+    background-color: gray;
+    width: 30%;
+    position: relative;
+}
+
+.minipic {
+    background-color: blue;
+    width: 100%;
+    height: calc(100%/5);
+    opacity: 0.5;
+}
+
+.minipic.active {
+    opacity: 1;
+}
+
+.col-30 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.arrow-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    z-index: 10;
+}
+
+.arrow-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    z-index: 10;
+}
+
+.btn {
+    background-color: white;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn.back {
+    top: 5px;
+}
+
+.btn.forward {
+    bottom: 5px;
+}
+
