@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-img {
-    display: block;
-}
-
 .container-carosel {
     width: 100%;
     margin-top: 100px;
